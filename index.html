@@ -1,19 +1,20 @@
 <html> 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
     
     <title>Date Widget Notion</title> 
     <style>
       #lbl {
         display: flex;
-        font-family: "Frank Ruhl Libre", serif;
-        border: 1px solid black
+        font-family: "DM Serif Text", serif;
+        border: 1px solid black;
         font-size: 24pt;
         color: black;
         padding: 0px;
         justify-content: left;
+        padding: 5px 5px 5px 10px;
         line-height: 1.5;
         height:85%;
         flex-direction: row;
@@ -50,7 +51,7 @@
     var today = new Date();
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
-    var date = `${dayOfWeek}, ${monthNames[today.getMonth()]} ${today.getDate()}`;
+    var date = `${dayOfWeek}, ${today.getDate()} ${monthNames[today.getMonth()]}`;
 
     document.getElementById('lbl').innerHTML = `
         <div class="container">
